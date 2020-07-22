@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    </head>
+    <body>
+        <header>
+            <div class="container text-center">
+                <div class="page-header">
+                    <h1>Welcome to the <span><b>Pandit jee</b></span> random password generator</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container text-center">
+                <form action="{% url 'password' %}" method="GET" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="length">Length</label>
+                        <select name="length" id="length">
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8" selected="selected">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <div class="check-boxes">
+                            <label for="uppercase"><input type="checkbox" name="uppercase" id="uppercase">uppercase</label>
+                            <label for="digits"><input type="checkbox" name="digits" id="digits">digits</label>
+                            <label for="specialcharacters"><input type="checkbox" name="specialcharacters" id="specialcharacters">special characters</label>
+                        </div>
+                        <input type="submit" value="generate password" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer-area">
+            <div class="container">
+            <div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me on</h5>
+                    <a href="https://www.facebook.com/bibek.pandit.37" target="_blank"><img src="{% static '/images/facebook.png' %}" alt="facebook"></a>
+                    <a href="https://www.instagram.com/bibekpandit796/" target="_blank"><img src="{% static '/images/instagram.png' %}" alt="instagram"></a>
+                </div>
+                <div class="copyrights text-center">
+                <p class="para">
+                    Copyright &#169;2020 All rights reserved | This template is made with by <a href="#"><span>Pandit Jee</span></a>
+                </p>
+                </div>
+            </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

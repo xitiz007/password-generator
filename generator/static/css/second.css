@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --roboto: 'Roboto', sans-serif;
+}
+
+body .container{
+    padding: 1rem;
+    font: var(--roboto);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+body .container h1{
+    padding-bottom: 1rem;
+}
+
+body .container h2{
+    font-weight: 550;
+    display: inline;
+}
+
+body .container a{
+    text-decoration: none;
+}
+
+body .container .random-password{
+    padding-bottom: 1rem;
+}
+
+

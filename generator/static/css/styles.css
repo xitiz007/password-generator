@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --roboto: 'Roboto', sans-serif;
+}
+
+header .container{
+    background-color: #e0e0e0;
+}
+
+header .container h1{
+    padding: 1rem .5rem;
+    font: var(--roboto);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 3.5rem;
+}
+
+main{
+    font: var(--roboto);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+main .container{
+    background-color: #F5F5F5;
+    background: url(../images/pandit.png) no-repeat;
+    background-size: cover;
+    margin-top: -1rem;
+}
+
+main .container form{
+    padding: 1rem 0.5rem;
+}
+
+main .container form .check-boxes label{
+    display: block;
+    padding: 5px;
+}
+
+main .container form .check-boxes label input {
+    margin-right: 10px;
+}
+
+footer.footer-area .container{
+    font: var(--roboto);
+    font-weight: 400;
+    background-color: #e0e0e0;
+}
+
+footer.footer-area .container .social h5{
+    padding: 1rem 0.5rem;
+}
+footer.footer-area .container .copyrights{
+    padding: 1rem 0.5rem;
+}
+
+footer.footer-area .container .social a{
+    margin-left: 1rem;
+}
+
+footer.footer-area .container .social a img{
+    width: 50px;
+}
+
+
+
